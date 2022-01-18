@@ -1,0 +1,62 @@
+[
+    {
+        "image": "../assets/Airpurifying_plants.JPG",
+        "category": "Trending",
+        "price": 15,
+        "giftFor": ["All", "Men", "Women"]
+    }, 
+    {
+        "image": "../assets/personalized_photo_mug.JPG",
+        "category": "Trending",
+        "price": 60,
+        "giftFor": ["All", "Men", "Women","Teen"]
+    },
+    {
+        "image": "../assets/doremon.JPG",
+        "category": "Trending",
+        "price": 70,
+        "giftFor": ["All", "Kids"]
+    },
+    {
+        "image": "../assets/elephant.JPG",
+        "category": "Trending",
+        "price": 65,
+        "giftFor": ["All", "Kids"]
+    },
+    {
+        "image": "../assets/shoes_men.JPG",
+        "category": "Lifestyle",
+        "price": 300,
+        "giftFor": ["All", "Men"]
+    },
+    {
+        "image": "../assets/shoes_women.JPG",
+        "category": "Lifestyle",
+        "price": 120,
+        "giftFor": ["All", "Women"]
+    },
+    {
+        "image": "../assets/headphone.JPG",
+        "category": "Electronics",
+        "price": 100,
+        "giftFor": ["All", "Men", "Women", "Teen"]
+    },
+    {
+        "image": "../assets/handcraft_lamp.JPG",
+        "category": "Home Decore",
+        "price": 450,
+        "giftFor": ["All", "Men", "Women"]
+    },
+    {
+        "image": "../assets/grinder.JPG",
+        "category": "Appliances",
+        "price": 350,
+        "giftFor": ["All", "Men", "Women"]
+    },
+    {
+        "image": "../assets/blanket.JPG",
+        "category": "Home Decore",
+        "price": 200,
+        "giftFor": ["All", "Men", "Women"]
+    }
+]

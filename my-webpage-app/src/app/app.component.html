@@ -1,0 +1,36 @@
+<div class="wrapper">
+  Christmas Gifts
+  <br>
+  <label for="cars">SELECT CATEGORY:</label>
+  
+  <div>
+    <select (change)="filterByCategory($event)">
+        <option *ngFor="let item of category" [value]="item">{{item}}</option>
+    </select>
+  </div>
+
+  <div>
+    <label>GIFT FOR:</label>
+    <!--<input type="image" src="https://images.app.goo.gl/YxhXa6YaqiLvbW8F8" />
+    <input type="image" src="https://images.app.goo.gl/YxhXa6YaqiLvbW8F8" />
+    <input type="image" src="https://images.app.goo.gl/YxhXa6YaqiLvbW8F8" />
+    <input type="image" src="https://images.app.goo.gl/YxhXa6YaqiLvbW8F8" />
+    <input type="image" src="https://images.app.goo.gl/YxhXa6YaqiLvbW8F8" />-->
+    <button type="button" (click)="filterByGiftFor($event)">All</button>
+    <button type="button" (click)="filterByGiftFor($event)">Men</button>
+    <button type="button" (click)="filterByGiftFor($event)">Women</button>
+    <button type="button" (click)="filterByGiftFor($event)">Kids</button>
+    <button type="button" (click)="filterByGiftFor($event)">Teen</button>
+  </div>
+
+  <label>SET PRICE</label>
+  <input type="range" min="10" max="999" value="10" ngModel=[(range)]>
+
+  <div>
+    <div class="row">
+      <div class="column" *ngFor="let item of gridImage">
+        <img class="img_class" src={{item.image}}>
+      </div>
+  </div>
+
+</div>
