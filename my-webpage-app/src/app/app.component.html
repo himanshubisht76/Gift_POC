@@ -1,36 +1,42 @@
 <div class="wrapper">
-  Christmas Gifts
-  <br>
-  <label for="cars">SELECT CATEGORY:</label>
-  
-  <div>
-    <select (change)="filterByCategory($event)">
-        <option *ngFor="let item of category" [value]="item">{{item}}</option>
-    </select>
-  </div>
+  <h1 style="color: crimson; font-weight: bolder; text-align: center; padding-top: 25px;">Christmas Gifts</h1>
 
-  <div>
-    <label>GIFT FOR:</label>
-    <!--<input type="image" src="https://images.app.goo.gl/YxhXa6YaqiLvbW8F8" />
-    <input type="image" src="https://images.app.goo.gl/YxhXa6YaqiLvbW8F8" />
-    <input type="image" src="https://images.app.goo.gl/YxhXa6YaqiLvbW8F8" />
-    <input type="image" src="https://images.app.goo.gl/YxhXa6YaqiLvbW8F8" />
-    <input type="image" src="https://images.app.goo.gl/YxhXa6YaqiLvbW8F8" />-->
-    <button type="button" (click)="filterByGiftFor($event)">All</button>
-    <button type="button" (click)="filterByGiftFor($event)">Men</button>
-    <button type="button" (click)="filterByGiftFor($event)">Women</button>
-    <button type="button" (click)="filterByGiftFor($event)">Kids</button>
-    <button type="button" (click)="filterByGiftFor($event)">Teen</button>
-  </div>
-
-  <label>SET PRICE</label>
-  <input type="range" min="10" max="999" value="10" ngModel=[(range)]>
-
-  <div>
+  <form [formGroup]="filterForm">
     <div class="row">
-      <div class="column" *ngFor="let item of gridImage">
-        <img class="img_class" src={{item.image}}>
+      <div style="flex:auto" class="column">
+        <label style="color: crimson; font-weight: bolder;" for="cars">SELECT CATEGORY : </label>
+        <select formControlName="category">
+            <option *ngFor="let item of category" [value]="item">{{item}}</option>
+        </select>
       </div>
-  </div>
-
+  
+      <div  style="flex:auto" class="column">
+        <label style="color: crimson; font-weight: bolder;">GIFT FOR : </label>
+        <input type="radio" value="All" formControlName="giftFor" >All
+        <input type="radio" value="Men" formControlName="giftFor" >Men
+        <input type="radio" value="Women" formControlName="giftFor">Women
+        <input type="radio" value="Kids" formControlName="giftFor">Kids
+        <input type="radio" value="Teen" formControlName="giftFor">Teen
+      </div>
+  
+      <div style="flex:auto" class="column" id="slider">
+        <label style="color: crimson; font-weight: bolder;">SET PRICE : </label>
+        <input class="bar" formControlName="sliderRanger" type="range" id="rangeinput" min="10" max="999" value="10" onchange="rangevalue.value=value"/>
+        <span class="highlight"></span>
+        <output id="rangevalue">10</output>
+      </div>
+    </div>
+    <div style="outline-offset: 5px;padding: 20px;" class="column">
+      <div *ngIf="gridImage.length===0">
+        No Data Found!!
+      </div>
+      <div  style="background-color: white;" class="row">
+        <div class="img_class" style="margin: auto; background-color: floralwhite; text-align: center" *ngFor="let item of gridImage">
+          <img (mouseover)="mouseHover(item)" (mouseout)="mouseOut(item)" src={{item.image}}>
+            <p>{{item.imagename}} ${{item.price}}</p>
+            <input type="text" *ngIf="item.hover == true" formControlName="divOnHover">
+        </div>
+      </div>
+    </div>
+  </form>
 </div>

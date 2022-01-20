@@ -1,25 +1,28 @@
 .wrapper {
-    max-width: 800px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    background-color: lavender;
 }
 .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
-  }
+}
+.box.no-cursor {
+    cursor: default;
+}
   
   /* Create two equal columns that sits next to each other */
-  .column {
-    flex: 50%;
+.column {
     padding: 0 4px;
-  }
-  
-  .column img {
+}
+
+.column img {
     margin-top: 8px;
     vertical-align: middle;
-  }
+}
 
-  .img_class:hover {
-    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  }
+.img_class:hover {
+    transform: scale(1.1);
+}

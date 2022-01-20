@@ -1,62 +1,226 @@
 [
     {
-        "image": "../assets/Airpurifying_plants.JPG",
-        "category": "Trending",
+        "image": "../assets/wallet_men.JPG",
+        "imagename": "Men's Wallet",
+        "category": ["Trending", "Lifestyle"],
+        "price": 45,
+        "giftFor": ["All", "Men"],
+        "hover": false
+    }, 
+    {
+        "image": "../assets/smart_tv.JPG",
+        "imagename": "Smart TV",
+        "category": ["Trending", "Appliances", "Electronics"],
+        "price": 670,
+        "giftFor": ["All"],
+        "hover": false
+    },
+    {
+        "image": "../assets/smart_watch.JPG",
+        "imagename": "Smart Watch",
+        "category": ["Trending", "Electronics"],
+        "price": 500,
+        "giftFor": ["All", "Men", "Women", "Teen"],
+        "hover": false
+    },
+    {
+        "image": "../assets/silk_saari.JPG",
+        "imagename": "Silk Saari",
+        "category": ["Trending", "Lifestyle"],
+        "price": 400,
+        "giftFor": ["All", "Women"],
+        "hover": false
+    }, 
+    {
+        "image": "../assets/school_bag.JPG",
+        "imagename": "School bag",
+        "category": ["Trending", "Lifestyle"],
+        "price": 50,
+        "giftFor": ["All", "Kids"],
+        "hover": false
+    }, 
+    {
+        "image": "../assets/ring_for_women.JPG",
+        "imagename": "Women's Ring",
+        "category": ["Trending", "Lifestyle"],
+        "price": 300,
+        "giftFor": ["All", "Women"],
+        "hover": false
+    },
+    {
+        "image": "../assets/ring_for_men.JPG",
+        "imagename": "Men's Ring",
+        "category": ["Trending", "Lifestyle"],
+        "price": 350,
+        "giftFor": ["All", "Men"],
+        "hover": false
+    },
+    {
+        "image": "../assets/piggy_bank.JPG",
+        "imagename": "Piggy Bank for Kids",
+        "category": ["Trending"],
+        "price": 10,
+        "giftFor": ["All", "Kids"],
+        "hover": false
+    },
+    {
+        "image": "../assets/pendent.JPG",
+        "imagename": "Pedent",
+        "category": ["Trending", "Lifestyle"],
+        "price": 20,
+        "giftFor": ["All", "Women", "Teen"],
+        "hover": false
+    },
+    {
+        "image": "../assets/necklace.JPG",
+        "imagename": "Women's Necklace",
+        "category": ["Trending", "Lifestyle"],
+        "price": 100,
+        "giftFor": ["All", "Women"],
+        "hover": false
+    },
+    {
+        "image": "../assets/microwave.JPG",
+        "imagename": "Microwave",
+        "category": ["Trending", "Appliances", "Electronics"],
+        "price": 350,
+        "giftFor": ["All"],
+        "hover": false
+    },
+    {
+        "image": "../assets/lamp_for_livingroom.JPG",
+        "imagename": "Lamp for side table",
+        "category": ["Trending", "Lifestyle", "Home Decore"],
+        "price": 50,
+        "giftFor": ["All"],
+        "hover": false
+    },
+    {
+        "image": "../assets/iron.JPG",
+        "imagename": "Iron",
+        "category": ["Trending", "Electronics", "Appliances"],
+        "price": 45,
+        "giftFor": ["All"],
+        "hover": false
+    },
+    {
+        "image": "../assets/braclet_for_men.JPG",
+        "imagename": "Braclet for Males",
+        "category": ["Trending", "Lifestyle"],
         "price": 15,
-        "giftFor": ["All", "Men", "Women"]
+        "giftFor": ["All", "Men"],
+        "hover": false
+    },
+    {
+        "image": "../assets/braclet_for_women.JPG",
+        "imagename": "Braclet for Females",
+        "category": ["Trending", "Lifestyle"],
+        "price": 14,
+        "giftFor": ["All", "Women"],
+        "hover": false
+    },
+    {
+        "image": "../assets/camera.JPG",
+        "imagename": "Digital Camera",
+        "category": ["Trending", "Electronics"],
+        "price": 600,
+        "giftFor": ["All", "Men", "Women"],
+        "hover": false
+    },
+    {
+        "image": "../assets/cctv.JPG",
+        "imagename": "CCTV",
+        "category": ["Trending", "Electronics", "Appliances"],
+        "price": 200,
+        "giftFor": ["All"],
+        "hover": false
+    },
+    {
+        "image": "../assets/earring.JPG",
+        "imagename": "Women's Earring", 
+        "category": ["Trending", "Lifestyle"],
+        "price": 50,
+        "giftFor": ["All", "Women", "Teen"],
+        "hover": false
+    },
+    {
+        "image": "../assets/Airpurifying_plants.JPG",
+        "imagename": "Plants for room",
+        "category": ["Trending", "Home Decore"],
+        "price": 20,
+        "giftFor": ["All", "Men", "Women"],
+        "hover": false
     }, 
     {
         "image": "../assets/personalized_photo_mug.JPG",
-        "category": "Trending",
-        "price": 60,
-        "giftFor": ["All", "Men", "Women","Teen"]
+        "imagename": "Personalized photo mug",
+        "category": ["Trending"],
+        "price": 30,
+        "giftFor": ["All", "Men", "Women","Teen"],
+        "hover": false
     },
     {
         "image": "../assets/doremon.JPG",
-        "category": "Trending",
-        "price": 70,
-        "giftFor": ["All", "Kids"]
+        "imagename": "Doremon soft toy",
+        "category": ["Trending"],
+        "price": 6,
+        "giftFor": ["All", "Kids", "Teen"],
+        "hover": false
     },
     {
         "image": "../assets/elephant.JPG",
-        "category": "Trending",
-        "price": 65,
-        "giftFor": ["All", "Kids"]
+        "imagename": "Elephant soft toy",
+        "category": ["Trending"],
+        "price": 7,
+        "giftFor": ["All", "Kids", "Teen"],
+        "hover": false
     },
     {
         "image": "../assets/shoes_men.JPG",
-        "category": "Lifestyle",
+        "imagename": "Men's Shoes",
+        "category": ["Trending", "Lifestyle"],
         "price": 300,
-        "giftFor": ["All", "Men"]
+        "giftFor": ["All", "Men"],
+        "hover": false
     },
     {
         "image": "../assets/shoes_women.JPG",
-        "category": "Lifestyle",
-        "price": 120,
-        "giftFor": ["All", "Women"]
+        "imagename": "Women's shoes",
+        "category": ["Trending", "Lifestyle"],
+        "price": 220,
+        "giftFor": ["All", "Women"],
+        "hover": false
     },
     {
         "image": "../assets/headphone.JPG",
-        "category": "Electronics",
+        "imagename": "Wireless Headphoes",
+        "category": ["Trending", "Electronics"],
         "price": 100,
-        "giftFor": ["All", "Men", "Women", "Teen"]
+        "giftFor": ["All", "Men", "Women", "Teen"],
+        "hover": false
     },
     {
         "image": "../assets/handcraft_lamp.JPG",
-        "category": "Home Decore",
-        "price": 450,
-        "giftFor": ["All", "Men", "Women"]
+        "imagename": "Handcraft lamp",
+        "category": ["Trending", "Home Decore"],
+        "price": 340,
+        "giftFor": ["All", "Men", "Women"],
+        "hover": false
     },
     {
         "image": "../assets/grinder.JPG",
-        "category": "Appliances",
+        "imagename": "Mixer Grinder",
+        "category": ["Trending", "Electronics", "Appliances"],
         "price": 350,
-        "giftFor": ["All", "Men", "Women"]
+        "giftFor": ["All"],
+        "hover": false
     },
     {
         "image": "../assets/blanket.JPG",
-        "category": "Home Decore",
+        "imagename": "Blanket",
+        "category": ["Trending", "Home Decore"],
         "price": 200,
-        "giftFor": ["All", "Men", "Women"]
+        "giftFor": ["All"],
+        "hover": false
     }
 ]

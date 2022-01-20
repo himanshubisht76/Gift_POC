@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+
+import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+
 import images from '../assets/images.json';
 
 @Component({
@@ -9,45 +12,52 @@ import images from '../assets/images.json';
 export class AppComponent {
   title = 'my-webpage-app';
   public imageList: {
-    image:string, 
-    category:string, 
+    image:string,
+    imagename: string,
+    category:any, 
     price:number,
-    giftFor:any
+    giftFor:any,
+    hover:boolean
   }[] = images;
   public gridImage: any = [];
-  public categorySelected: string = "";
-  public giftForOptionsSelected: string = "";
 
   public category= ["Trending", "Lifestyle", "Home Decore", "Electronics", "Appliances"];
   public giftForOptions = ["All", "Men", "Women", "Kids", "Teen"];
 
+  filterForm = new FormGroup({
+	  category: new FormControl(this.category[0]),
+    giftFor: new FormControl(this.giftForOptions[0]),
+    sliderRanger: new FormControl(10),
+    divOnHover: new FormControl("See More")
+	});
+
   ngOnInit() {
-    this.gridImage = this.imageList;
-    this.categorySelected = this.category[0];
-    this.giftForOptionsSelected = this.giftForOptions[0];
+    this.imageList.forEach(obj => {
+      if((obj.giftFor.toString().includes(this.filterForm.value['giftFor']) && 
+      (obj.category.toString().includes(this.filterForm.value['category'])) &&
+      (obj.price <= this.filterForm.value['sliderRanger']))) {
+        this.gridImage.push(obj);
+      }
+    });
   }
 
-  filterByGiftFor(event:any) {
+  ngDoCheck() {
     let newImageList: any = [];
-    this.giftForOptionsSelected = event.target.innerText;
     this.imageList.forEach(obj => {
-      if((obj.giftFor.toString().includes(event.target.innerText)) 
-          && (obj.category == this.categorySelected)) {
+      if((obj.giftFor.toString().includes(this.filterForm.value['giftFor']) && 
+      (obj.category.toString().includes(this.filterForm.value['category'])) &&
+      (obj.price <= this.filterForm.value['sliderRanger']))) {
         newImageList.push(obj);
       }
     });
     this.gridImage = newImageList;
   }
 
-  filterByCategory(event:any){
-    let newImageList: any = [];
-    this.categorySelected = event.target.value;
-    this.imageList.forEach(obj => {
-      if((obj.category == event.target.value) && 
-         (obj.giftFor.toString().includes(this.giftForOptionsSelected))) {
-        newImageList.push(obj);
-      }
-    });
-    this.gridImage = newImageList;
+  mouseHover(item:any) {
+    item['hover'] = true;
   }
-}
+
+  mouseOut(item:any) {
+    item['hover'] = false;
+  }
+} 
